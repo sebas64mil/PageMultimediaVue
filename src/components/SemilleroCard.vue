@@ -58,6 +58,7 @@ export default {
 <style scoped>
 .semilleroCard {
   background: var(--bg3);
+  font-family: var(--font-mono);
   padding: var(--sp-7);
   display: flex;
   flex-direction: column;
@@ -138,6 +139,7 @@ export default {
   font-size: .85rem;
   margin-bottom: var(--sp-5);
   line-height: 1.75;
+  color: var(--text-muted);
 }
 
 .semilleroCard > div {
@@ -163,14 +165,14 @@ export default {
   border-right: none;
 }
 
-.semilleroCard > div h5 {
-  color: var(--primary);
-  font-family: var(--font-id);
-  font-size: 1.6rem;
-  font-weight: 700;
-  letter-spacing: -0.02em;
-  margin-bottom: 4px;
-  text-shadow: 0 0 14px var(--glow-orange);
+.semilleroCard > div > div h5 {
+  color: var(--primary) !important;
+  font-family: var(--font-id) !important;
+  font-size: 1.6rem !important;
+  font-weight: 700 !important;
+  letter-spacing: -0.02em !important;
+  margin-bottom: 4px !important;
+  text-shadow: 0 0 14px var(--glow-orange) !important;
 }
 
 .semilleroCard > div span {

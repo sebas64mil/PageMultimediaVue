@@ -113,6 +113,10 @@ export default {
   pointer-events: none;
 }
 
+.carousel-inner {
+  position: relative;
+}
+
 .carousel-inner::before {
   content: '';
   position: absolute;
@@ -132,8 +136,8 @@ export default {
   right: 24px;
   width: 40px;
   height: 40px;
-  border-bottom: 1px solid var(--glow-orange);
-  border-right: 1px solid var(--glow-orange);
+  border-bottom: 1px solid rgba(242,145,27,0.4);
+  border-right: 1px solid rgba(242,145,27,0.4);
   z-index: 3;
 }
 
@@ -155,7 +159,7 @@ export default {
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: var(--secondary);
-  margin-bottom: 12px;
+  margin-bottom: var(--sp-3);
   display: flex;
   align-items: center;
   gap: 10px;
@@ -185,17 +189,17 @@ export default {
   justify-content: flex-start;
 }
 
-.carousel-indicators button[data-bs-target] {
+.carousel-indicators [data-bs-target] {
   width: 28px;
   height: 2px;
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(255,255,255,0.2);
   border: none;
   border-radius: 0;
   opacity: 1;
-  transition: all 0.3s ease;
+  transition: all .3s ease;
 }
 
-.carousel-indicators button.active {
+.carousel-indicators .active {
   background: var(--primary);
   width: 48px;
   box-shadow: 0 0 8px var(--glow-orange);

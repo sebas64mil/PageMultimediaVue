@@ -70,13 +70,7 @@ export default {
   left: 0;
   right: 0;
   height: 1px;
-  background: linear-gradient(
-    90deg,
-    transparent,
-    var(--primary),
-    var(--secondary),
-    transparent
-  );
+  background: linear-gradient(90deg, transparent, var(--primary), var(--secondary), transparent);
 }
 
 .Eventos::after {
@@ -97,12 +91,17 @@ export default {
   pointer-events: none;
 }
 
+.Eventos :deep(.section-label) {
+  margin-bottom: var(--sp-3);
+}
+
 .Eventos h2 {
   text-align: left;
+  font-size: clamp(2.2rem, 5vw, 3.8rem);
+  font-weight: 800;
+  color: var(--text-heading);
   margin-bottom: clamp(40px, 5vw, 60px);
   max-width: 700px;
-  position: relative;
-  z-index: 1;
 }
 
 .VideoEvento {
@@ -167,7 +166,7 @@ export default {
 .event-info h5 {
   font-family: var(--font-mono);
   font-size: 0.75rem;
-  color: var(--secondary);
+  color: var(--text-muted);
   letter-spacing: 0.1em;
   margin: 0;
   text-transform: uppercase;
@@ -182,6 +181,7 @@ export default {
 
 .event-info p {
   font-size: 0.85rem;
+  color: var(--text-muted);
   margin-bottom: 0;
 }
 
