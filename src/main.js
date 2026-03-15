@@ -12,6 +12,9 @@ import 'bootstrap/dist/js/bootstrap.bundle.js'
 // FontAwesome
 import '@fortawesome/fontawesome-free/css/all.css'
 
+// Particles.js
+import 'particles.js'
+
 const app = createApp(App)
 
 app.use(createPinia())
